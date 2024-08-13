@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+    <head> <!-- Estaran aquellos metadatos e informacion que no vayan a renderizarse, como archivos a cargar etc-->
+    
+        <meta charset="utf-8" > <!-- Si no se aniade puede dar lugar a problemas a la hora de usar emogis y acentos-->
+        
+        <meta name="viewport" content="width=device-widht"><!--esto nos hace que da igual como sea la pantalla mantendra las proporciones de la pantalla -->
+        
+        <title>Portfolio Luis Montoto</title> <!-- aparecer en el nombre de la pestania, y tambien sera el nombre por el que aparece en el buscador -->
+        
+        <meta name="robots" content="index, follow">
+    
+        <link rel="icon" type="favicon/png" href="imagenes/favicon.png">
+        <!-- type es el Nombre de la imagen / formato de la imagen. href es la direccion y el nombre del archivo -->
+    
+        <meta name="description"content="Portfolio del desarrollador web Luis Montoto Junior">
+        <!-- El meta name description es importante porque es la descripcion que saldra en el buscador web-->
+        <!--Open graph  -->
+    
+        <meta property="og:title" content="Portfolio para puesto Junior"><!--funciona como una descripcion del titulo, si no se aniade este metadato
+        por defecto va a hacer un fallback al titulo-->
+    
+        <meta property="og:description" content="Portfolio para puesto Junior"><!--funciona como una descripcion del description, si no se aniade este 
+            metadato por defecto va a hacer un fallback a la descripcion-->
+    
+        <meta property="og:image" content="images/mano.jpg">
+        <!-- para mas informacion y mas metadato relacionado con el posicionamiento, busqueda y legibildiad ir a opengraph-->
+    <!-- otro muy util cuando se tiene contenido en varios idiomas es 
+        <link="alternate" href="direccion de la pagina en ingles" hreflang="en-GB"
+        Aqui le decimos a google que cuando encuentre la pagina, es el mismo contenido pero traducido a ingles, de esta forma evitamos q encuentre
+        informacion duplicada
+    -->
+        <!-- Para informar a google cual es la pagina principal de todas es
+        <link rel="canonical"href="htts://direccion"
+        -->
+        <style>
+            h1{
+                color: oklch(75.82% 0.1268 188.55);
+                border-width: 4px;
+                border-style: solid;
+                border-color: currentColor;
+                font-family: monospace;
+            }
+            h2:hover{
+                color:blue;
+                outline: 4px solid red;
+                background-color: rgb(108, 57, 85);
+                
+            }
+           body {
+            font-family: "Gill Sans Extrabold", Helvetica, sans-serif
+           }
+          
+
+           }
+
+        </style>
+
+    </head>
+    <body>
+
+        
+
+    
+        <h1>Portfolio de Luis Montoto</h1> <!-- h1 destacara aquello que sea realmente importante, dandole un titulo-->
+        <p> <strong><!--Stronge se utilizara para resaltar palabras o frases importantes-->Desarrollador Web.</strong> Apasionado de la informatica. Siempre creciendo, sin miedo a los desafios y a aprender.</p>
+        <h2>Estudios</h2>
+        <ul> <!--ul es usado para crear una lista no ordenada-->
+            <li>Grado superior en desarrollo Web - 2024/2026</li><!-- En li apareceran los elementos de la lista-->
+            <li>Grado superior en animacion 2D,3D desarrollo interactivos - 2018/2020</li>
+            <li>Grado en ingenieria en disenio Industrial - 2012/sin terminar</li>
+        </ul>
+
+        <section>
+            <h3> Cosas sobre mi</h3>
+            <details>
+                <summary>
+                    En que has trabajado?
+                </summary>
+                <p>
+                    He trabajado en multitud de oficio, siendo los mas frecuentes camarero de sala y arbitro de baloncesto federado de la Federacion Andaluza de Baloncesto
+                </p>
+            </details>
+            <details>
+                <summary>Otras habilidades?</summary>
+                <p>Domino la programacion basica, lenguages como c# para videojuegos asi como programas como unity y Unreal. Tambien controlo Catia. Soy buen orador en publico y no tengo problema en enfrentar y defender problemas ante mis responsables o clientes</p>
+            </details>
+        </section>
+
+
+        <section>
+            
+
+
+                <h2>Formulario</h2>
+                <form method="post" action="/">
+                    <section>
+                        <fieldset>
+                            <legend> Datos e Informacion Personal</legend>
+                            <div><label for="name">
+                                Nombre:
+                            </label>
+                            <input type = "text" id="name" name="name"
+                            placeholder="Paco de Lucia" required>
+                            
+                        </div>
+                        <div><label for="email">
+                            Correo:
+                            </label>
+                            <input type = "email" id="email" name="email"
+                            placeholder="pacolucia@gmail.com" requiered>
+                        </div>
+                        <div><label for="tel">
+                            Telefono:
+                            </label>
+                            <input type = "tel" id="phone" name="phone"
+                            placeholder="776777384" requiered pattern="[0-9]{9}">
+                        </div>
+                        </fieldset>
+                    
+                    </section>
+                    <section>
+                        <fieldset>
+                            <legend> Otros </legend>
+                            <div>
+                                <label for="why"> Por que quieres contactar? </label>
+                                <select name="why" id="why" required>
+                                <option 1 value="1">
+                                    Trabajo
+                                </option>
+                                <option 2 value="2">
+                                    dudas
+                                </option>
+                                <option 3 value="3">
+                                    mas informacion
+                                </option>
+                                </select>         
+                            </div>
+                            <div>
+                                <label for="terms">Aceptas los terminos</label>
+                                <input type="checkbox" id="terms" name="terms" value="checked" required >
+
+                            </div>
+                            <div>
+                                <datalist id="softwares">
+                                    <option value="Blender"></option>
+                                    <option value="Maya"></option>
+                                </datalist>
+                                <label>Que software estas interesado
+                                        <input list="softwares" name="softwares" >
+                                </label>
+                                
+                            </div>
+                        </fieldset>
+                
+                
+                    </section>
+                <button>Enviar</button>
+            </form>
+        </section>
+
+    </body>
+
+</html>
+  
